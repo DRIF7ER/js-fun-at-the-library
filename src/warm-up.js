@@ -10,8 +10,8 @@
 // Initialize two new variables, "title", and "pages", and assign values to them with
 // a book's title and page count.
 
-// var title = "Harry Potter";
-// var ...
+var title = "The Lord Of The Rings";
+var pages = 1137
 
 
 
@@ -19,21 +19,26 @@
 // condensed the book, use a built in math operator to make the page count a quarter
 // of what it currently is 
 
+pages = 1137 - 137
+console.log(pages)
 
 
 // Initialize a new variable "movie", but leave it undefined
 
+var movie
 
 
 // Create a variable named "sequel", and assign it to a be a sequel of your
 // book (made up or not!). Your sequel must make use of your "title" variable from above
 
+var sequel = `${title}: The Rise Of Sauron's Heir`
+// console.log(sequel)
 
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the book you chose is your favorite book or not
 
-
+var isFavorite = true
 
 
 // Create a new variable named "isShortStory", and use a comparison operator to
@@ -50,7 +55,14 @@
 // the statement 'I could read that in a day!', otherwise, log the statement 
 // 'Ok, maybe I could read that in a day and a half'
 
-
+function readInADay (pages){
+    if (pages < 1000){
+        console.log(`I could read that in a day!`)
+    } else {
+        console.log('Ok, maybe I could read that in a day and a half')
+    }
+}
+console.log(readInADay(pages))
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
